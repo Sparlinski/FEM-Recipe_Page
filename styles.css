@@ -10,56 +10,102 @@ body {
     align-items: center;
     width: 100%;
     height: 100vh;
-    background-color: bisque;
+    background-color: hsl(30, 54%, 90%);
 }
 
 .recipe-card {
-    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 275px;
     height: 650px;
     border-radius: 10px;
     padding: 1em;
     background-color: white;
-    border: solid 2px red;
 }
 
-/* header */
+
+/* Images */ 
 
 img {
     width: 100%;
     border-radius: 7.5px;
 }
 
-/* main */
+/* Font style and sizing */
 
-.container {
-    width: 100%;
+h1 {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
 }
 
-/* fonts */
-
-h1, h2 {
-    font-family: "Young Serif", serif;
+h2, 
+p, 
+ul, 
+ol {
+    font-family: "Outfit", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
-h1 {
-    font-size: 1.2rem;
-}
-
 h2 {
-    font-size: 1rem;
-}
-
-p, li {
-    font-family: "Outfit", sans-serif;
     font-size: .5rem;
-    list-style-position: inside;
+    font-weight: bold;
+    line-height: 1rem;
 }
 
-span {
+p,
+ul,
+ol {
+    font-size: .41rem;
+}
+
+ul, ol {
+    padding-left: 1.75em;
+    line-height: 1rem;
+}
+
+.li-bold {
     font-weight: bold;
 }
+
+
+/* Layout */
+
+.top-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: .5em 0 .5em 0;
+    height: 25%;
+    border: 2px solid red;
+}
+
+.prep {
+    background-color: hsl(330, 100%, 98%);
+    padding: .75em;
+}
+
+.main-container {
+    height: 45%;
+    border: 2px solid red;
+}
+
+.seperator-line {
+    border-top: 1px solid hsl(30, 10%, 34%);
+}
+
+.bottom-container {
+    height: 20%;
+    border: 2px solid red;
+}
+
+
+
+
+
 
 
 
