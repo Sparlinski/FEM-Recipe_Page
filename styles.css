@@ -32,13 +32,14 @@ img {
     border-radius: 7.5px;
 }
 
-/* Font style and sizing */
+/* Font style spacing, and sizing */
 
 h1 {
     font-family: "Young Serif", serif;
     font-weight: 400;
     font-style: normal;
     font-size: 1rem;
+    color: hsl(24, 5%, 18%);
 }
 
 h2, 
@@ -53,24 +54,53 @@ ol {
 h2 {
     font-size: .5rem;
     font-weight: bold;
-    line-height: 1rem;
+    margin-bottom: .25em;
+    color: hsl(332, 51%, 32%);
+}
+
+h3 {
+    font-size: 1rem;
+    color: hsl(14, 45%, 36%);
 }
 
 p,
 ul,
 ol {
-    font-size: .41rem;
+    font-size: .42rem;
+    color: hsl(30, 10%, 34%);
 }
 
-ul, ol {
-    padding-left: 1.75em;
-    line-height: 1rem;
+ul,
+ol {
+    line-height: .75rem;
+}
+
+ul {
+    padding-left: 2em;
+}
+
+ol {
+    padding-left: 1.25em;
+}
+
+.li-inset {
+    padding-left: 1em;
 }
 
 .li-bold {
     font-weight: bold;
 }
 
+.no-bullet {
+    list-style: none;
+    padding-left: 2.5em;
+}
+
+.p-color {
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+    margin-left: 5em;
+}
 
 /* Layout */
 
@@ -78,28 +108,52 @@ ul, ol {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding: .5em 0 .5em 0;
-    height: 25%;
-    border: 2px solid red;
+    padding: .2.5em 0 2.5em 0;
+    height: 45%;
 }
 
 .prep {
     background-color: hsl(330, 100%, 98%);
     padding: .75em;
+    border-radius: 10px;
 }
 
-.main-container {
-    height: 45%;
-    border: 2px solid red;
+.middle-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 30%;
 }
 
 .seperator-line {
-    border-top: 1px solid hsl(30, 10%, 34%);
+    border-top: 1px solid hsl(30, 18%, 87%);
+    margin: .2em 0 .2em 0;
+}
+
+.nutrition-seperator {
+    border-top: 1px solid hsl(30, 18%, 87%);
+    margin: .1em 0 .1em 0; 
 }
 
 .bottom-container {
-    height: 20%;
-    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 25%;
+}
+
+.nutrition-containers {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: .9em;
+}
+
+.nutrition-left {
+    width: 35%;
+}
+
+.nutrition-right {
+    width: 30%;
 }
 
 
